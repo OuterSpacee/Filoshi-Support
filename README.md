@@ -33,16 +33,16 @@ Everything happens on your PC. The conversion engines ship inside the app (FFmpe
 
 | Family | Tested | Needs an add-on | Not yet tested | Examples |
 |---|---:|---:|---:|---|
-| Video | 901 | 0 | 0 | MP4, MOV, MKV, AVI, WebM |
+| Video | 896 | 0 | 0 | MP4, MOV, MKV, AVI, WebM |
 | Audio | 342 | 0 | 36 | MP3, WAV, FLAC, OGG, M4A |
-| Images | 415 | 0 | 342 | HEIC, RAW, PSD, WebP, AVIF, PNG, JPG |
+| Images | 420 | 0 | 342 | HEIC, RAW, PSD, WebP, AVIF, PNG, JPG |
 | Documents | 123 | 71 | 8 | DOCX, PDF, EPUB, Markdown, HTML |
 | Archives | 60 | 0 | 42 | ZIP, 7Z, TAR, RAR, ISO |
 | 3D and CAD | 0 | 144 | 0 | STEP, STL, OBJ, GLB, DXF (with FreeCAD) |
 | Email | 0 | 5 | 0 | EML (with LibreOffice) |
 | Fonts | 0 | 0 | 12 | TTF, OTF, WOFF |
 
-The full, searchable list is on [filoshi.com/formats](https://filoshi.com/formats). The counts above come from the same test data the site and the app's Formats page use.
+The full, searchable list is on [filoshi.com/formats](https://filoshi.com/formats). The counts above come from the same test data the site and the app's Formats page use, grouped the way that page groups them (GIF counts as an image).
 
 ### Optional add-ons
 
