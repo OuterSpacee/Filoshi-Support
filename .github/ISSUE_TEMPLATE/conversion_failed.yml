@@ -1,0 +1,98 @@
+name: Conversion failed
+description: A specific conversion gives an error, a broken file, or a wrong result.
+title: "[Conversion]: SOURCE to TARGET"
+labels: ["conversion-failed"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Replace SOURCE and TARGET in the title (for example "HEIC to JPG").
+        Office documents, email and 3D/CAD conversions need a free add-on (LibreOffice or FreeCAD). Check that it finished installing first.
+        **Never post your license key, order number or private files here.** This repository is public.
+  - type: input
+    id: source
+    attributes:
+      label: Source format
+      placeholder: "HEIC"
+    validations:
+      required: true
+  - type: input
+    id: target
+    attributes:
+      label: Target format
+      placeholder: "JPG"
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where did you convert?
+      options:
+        - Filoshi desktop app
+        - The free try on the filoshi.com home page
+        - A /convert page on filoshi.com
+    validations:
+      required: true
+  - type: dropdown
+    id: engine
+    attributes:
+      label: Engine or add-on
+      description: The Formats page in the app shows which engine a conversion uses. Pick "Not sure" if you don't know.
+      options:
+        - Not sure
+        - Built in (FFmpeg, ImageMagick, Pandoc, PDFium, pdfcpu, 7-Zip)
+        - LibreOffice add-on (installed)
+        - LibreOffice add-on (not installed, or not sure)
+        - FreeCAD add-on (installed)
+        - FreeCAD add-on (not installed, or not sure)
+    validations:
+      required: true
+  - type: input
+    id: size
+    attributes:
+      label: File size
+      placeholder: "12 MB"
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: Error text or what went wrong
+      description: The exact error message (copy it), or what is wrong with the result (blank file, no sound, wrong colours, ...).
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Filoshi version
+      description: Settings → About. Write "website" if you used the browser.
+      placeholder: "2.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows 11
+        - Windows 10
+        - macOS
+        - Linux
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Anything else
+      description: Settings you changed in the file viewer, where the file came from (phone, camera, app), whether a sample file without private content is available, diagnostics (Settings → About → Copy diagnostics).
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you file
+      options:
+        - label: I searched the existing issues and this is not a duplicate.
+          required: true
+        - label: This report contains no license key, order number or private file.
+          required: true

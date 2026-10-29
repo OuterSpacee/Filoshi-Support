@@ -1,0 +1,47 @@
+name: Website issue
+description: Something wrong on filoshi.com - a broken page, wrong information, the browser try, or checkout.
+title: "[Website]: "
+labels: ["website"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For a problem with a payment or your license key, email support@filoshi.com instead. **Never post an order number or license key here.**
+  - type: input
+    id: url
+    attributes:
+      label: Page address
+      placeholder: "https://filoshi.com/convert/mp4-to-mp3"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem?
+      options:
+        - The page doesn't load or looks broken
+        - Wrong or outdated information
+        - The free try or a /convert page converter doesn't work
+        - Checkout or download
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Include any error text exactly as shown. For the browser try, also say the file's format and size.
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      placeholder: "Chrome 141 on Windows 11, Safari on iPhone 16"
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Drag images here if they help.

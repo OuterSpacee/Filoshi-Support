@@ -1,0 +1,39 @@
+name: Feature request
+description: An idea for the Filoshi app.
+title: "[Feature]: "
+labels: ["feature"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe the job, not the button. "I convert 200 photos every week and rename them by date" is more useful than "add a rename option".
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: How you imagine it working.
+    validations:
+      required: true
+  - type: textarea
+    id: workaround
+    attributes:
+      label: What do you do today instead?
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - All of them
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you file
+      options:
+        - label: I searched the existing issues and Discussions and this is not a duplicate.
+          required: true

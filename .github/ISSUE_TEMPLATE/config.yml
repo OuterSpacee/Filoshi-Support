@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question
+    url: https://github.com/OuterSpacee/Filoshi-Support/discussions
+    about: Questions, tips and "can Filoshi do X?" go to Discussions.
+  - name: Purchase, license key or refund
+    url: mailto:support@filoshi.com
+    about: Email support@filoshi.com. Never post a license key, order number or receipt in a public issue.
+  - name: Report a security problem
+    url: https://github.com/OuterSpacee/Filoshi-Support/blob/main/SECURITY.md
+    about: Report security problems privately by email, never as a public issue.

@@ -1,0 +1,49 @@
+name: Format request
+description: Ask for a format or a conversion that Filoshi doesn't list yet.
+title: "[Format]: "
+labels: ["format-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Check [filoshi.com/formats](https://filoshi.com/formats) first: the conversion may already be listed, possibly with an add-on.
+  - type: input
+    id: source
+    attributes:
+      label: Source format
+      placeholder: "CR3"
+    validations:
+      required: true
+  - type: input
+    id: target
+    attributes:
+      label: Target format
+      placeholder: "JPG"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What do you need it for?
+      description: The program or device the files come from, and where they need to go. It helps us pick the right engine and settings.
+    validations:
+      required: true
+  - type: input
+    id: how-often
+    attributes:
+      label: How often would you use it?
+      placeholder: "Every day, a few times a month, once"
+  - type: textarea
+    id: other-tools
+    attributes:
+      label: Does another tool do it today?
+      description: If you know a program that handles this conversion, name it.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you file
+      options:
+        - label: I checked the Formats page and this conversion is not listed.
+          required: true
+        - label: I searched the existing issues and this is not a duplicate.
+          required: true
