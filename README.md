@@ -10,26 +10,49 @@
 <p align="center"><strong>The file converter that works on your PC.</strong><br>Drop anything on me.</p>
 
 <p align="center">
+  <a href="https://filoshi.com">Website</a> ·
   <a href="https://filoshi.com/#pricing"><strong>Get Filoshi — $29</strong></a> ·
-  <a href="https://filoshi.com">filoshi.com</a> ·
   <a href="https://filoshi.com/formats">Formats</a> ·
-  <a href="SUPPORT.md">Get help</a> ·
-  <a href="https://github.com/OuterSpacee/Filoshi-Support/issues/new/choose">Report an issue</a>
+  <a href="https://filoshi.com/blog">Blog</a> ·
+  <a href="https://github.com/OuterSpacee/Filoshi-Support/issues/new/choose">Report an issue</a> ·
+  <a href="https://github.com/OuterSpacee/Filoshi-Support/discussions">Discussions</a>
 </p>
 
 ---
 
-This is the public support repository for **Filoshi**. Use it to report a problem, ask for a format or a feature, ask a question, or read about the product. The app's source code is not here: Filoshi is proprietary software (see [License](#license)).
+Filoshi is a small desktop app with a big appetite. Drag a file onto the window and the little character who lives there eats it, then hands back the same file in the format you picked.
 
-## What Filoshi is
+- **Your files never leave your PC.** The conversion engines ship inside the app. There is nothing to upload and no account to make.
+- **It converts between the families we test.** 1,841 conversions passed our automated test matrix with 0 failures: video (896), audio (342), images (420), documents (123) and archives (60).
+- **You pay once.** $29, no subscription. Every 2.x update is included.
 
-Filoshi is a desktop file converter for Windows 10 and 11. Drag a file onto the window and the character who lives in the app eats it. Pick a format, press Convert, and the new file appears next to the original, or in a folder you choose. The original is never changed.
+## See it in action
 
-Everything happens on your PC. The conversion engines ship inside the app (FFmpeg, ImageMagick, Pandoc, PDFium, pdfcpu and 7-Zip), so your files are never uploaded anywhere. There is no account, no cloud and no subscription.
+<p align="center">
+  <img src="assets/demo-eat.gif" alt="Filoshi eating a dropped video file and converting it" width="480"><br>
+  <em>Drop a file and Filoshi eats it. The new file appears next to the original.</em><br>
+  <a href="https://filoshi.com/videos/eat.mp4">Watch the full video</a>
+</p>
 
-## What it converts
+<p align="center">
+  <img src="assets/demo-gulp.gif" alt="Filoshi converting several files in one queue" width="480"><br>
+  <em>Drop a whole pile. Each file shows its own progress and result.</em><br>
+  <a href="https://filoshi.com/videos/gulp.mp4">Watch the full video</a>
+</p>
 
-**1,841 conversions passed our automated test matrix** (Windows 11, report of 2026-10-24, 0 failures). In all, the app lists 2,501 conversions from 152 input formats: the 1,841 tested ones, 220 that need a free add-on (LibreOffice or FreeCAD), and 440 that are listed but not yet covered by a test file.
+<p align="center">
+  <img src="assets/demo-island.gif" alt="The Filoshi island converting a photo at the top of the screen" width="480"><br>
+  <em>Close the window and Filoshi becomes a small pill at the top of the screen. Drop a file on it, pick a format, drag the result out.</em><br>
+  <a href="https://filoshi.com/videos/island.mp4">Watch the full video</a>
+</p>
+
+## What Filoshi does
+
+Drag a file onto the window, pick a format and press Convert. The new file appears next to the original, or in a folder you choose. The original is never changed.
+
+The engines inside the app are FFmpeg, ImageMagick, Pandoc, PDFium, pdfcpu and 7-Zip. Filoshi runs on Windows 10 and 11.
+
+The app lists 2,501 conversions from 152 input formats (counts from the test report of 2026-10-24, Windows 11):
 
 | Family | Tested | Needs an add-on | Not yet tested | Examples |
 |---|---:|---:|---:|---|
@@ -42,82 +65,96 @@ Everything happens on your PC. The conversion engines ship inside the app (FFmpe
 | Email | 0 | 5 | 0 | EML (with LibreOffice) |
 | Fonts | 0 | 0 | 12 | TTF, OTF, WOFF |
 
-The full, searchable list is on [filoshi.com/formats](https://filoshi.com/formats). The counts above come from the same test data the site and the app's Formats page use, grouped the way that page groups them (GIF counts as an image).
+That is 1,841 tested, 220 that need a free add-on and 440 that are listed but not yet covered by a test file. The full, searchable list is on [filoshi.com/formats](https://filoshi.com/formats). The table groups formats the way that page does (GIF counts as an image).
 
-### Optional add-ons
+Filoshi 2.0 also brings:
 
-Two engines are too large to bundle. The app downloads them once, inside the app, the first time you need them. After that they run offline too.
-
-- **LibreOffice**: Office documents (Word, Excel, PowerPoint, OpenDocument), for example DOCX to PDF.
-- **FreeCAD**: 3D models and CAD files.
-
-## What else is inside (Filoshi 2.0)
-
-- **Many files at once.** Drop forty files and they go down in one gulp. Each file shows its own progress and result.
-- **The file viewer.** Look before you convert: crop, rotate, resize and adjust pictures; trim video and audio, change resolution, frame rate, speed or volume; pick PDF pages. The settings are applied while it converts.
-- **The PDF Suite.** Organize, merge, split, compress, protect, watermark, number and sign PDFs, and add text, pictures, highlights or drawings to a page. Saving writes a real PDF.
-- **The island.** Closing the window moves Filoshi to a small pill at the top of the screen. Drop a file there, pick a format, and drag the result out. Ctrl+Alt+F opens it.
+- **Many files at once.** Drop forty files and they go down in one gulp.
+- **The file viewer.** Look before you convert: crop, rotate, resize and adjust pictures, trim video and audio, change resolution, frame rate, speed or volume, and pick PDF pages.
+- **The PDF Suite.** Organize, merge, split, compress, protect, watermark, number and sign PDFs, and add text, pictures, highlights or drawings to a page.
+- **The island.** A small pill at the top of the screen. Ctrl+Alt+F opens it.
 - **The taskbar buddy** (optional). Filoshi walks along the taskbar and perches on the window.
 - **Characters and a wardrobe.** Seven characters and seventeen outfits. Sounds stay off unless you turn them on.
 
-## Try it free in your browser
+Want to try before you buy? The home page at [filoshi.com](https://filoshi.com) converts one file in your browser without uploading it: photos up to 50 MB, audio up to 100 MB and video up to 200 MB. The desktop app does everything else.
 
-The home page at [filoshi.com](https://filoshi.com) converts one file right in your browser, without uploading it:
-
-- Photos: HEIC, PNG, JPG, WebP, BMP, GIF or AVIF to JPG, PNG or WebP (up to 50 MB).
-- Audio: MP3, WAV, FLAC, OGG, M4A and more (up to 100 MB).
-- Video: MP4, MOV, WebM, MKV, AVI, M4V, or just the soundtrack (up to 200 MB).
-
-Some `/convert` pages on the site also have an in-browser converter for common video and audio formats. The desktop app does everything else.
-
-## Price
-
-**$29, once.** One license, every 2.x update included. No subscription and no account: the license key arrives by email after checkout (payments by Polar).
-
-[**Get Filoshi — $29**](https://filoshi.com/#pricing)
-
-### Refund policy
-
-All sales are final. If Filoshi doesn't work on your computer (it won't install, won't start, or can't do a conversion the site says it does) and we can't fix it with you, we refund you in full within 30 days of your purchase. Email [support@filoshi.com](mailto:support@filoshi.com). A refund turns off the license key. This does not limit any rights you have under the law where you live. Full terms: [filoshi.com/refund](https://filoshi.com/refund).
-
-## Platforms and versions
+## Install
 
 | Platform | Version | Notes |
 |---|---|---|
 | Windows 10 and 11 (64-bit) | **2.0.0** (released 2026-10-27) | Everything described on this page |
-| macOS | 1.0.36 | The earlier version; same license key. A Mac version of 2.0 is planned; no date yet |
-| Linux | 1.0.36 | The earlier version; same license key |
+| macOS | 1.0.36 | The earlier version, same license key. A Mac version of 2.0 comes later as a free update with the same key; no date yet |
+| Linux | 1.0.36 | The earlier version, same license key |
 
-Downloads are on [filoshi.com/download](https://filoshi.com/download) (you enter your license key there).
+1. Buy a license at [filoshi.com](https://filoshi.com/#pricing). The key arrives by email.
+2. Go to [filoshi.com/download](https://filoshi.com/download) and enter your key to get the installer.
+3. Run it. It installs for your user only and needs no admin rights.
+4. Paste your key once in the app. After that it works offline.
 
-The Windows installer is not code-signed yet, so Windows SmartScreen may say "Windows protected your PC" the first time. Choose **More info**, then **Run anyway**. It installs for your user only and needs no admin rights.
+The Windows installer is not code-signed yet, so Windows SmartScreen may say "Windows protected your PC" the first time. Choose **More info**, then **Run anyway**.
+
+Two engines are too large to bundle, so they are optional downloads. Get them only if you need them:
+
+- **LibreOffice** for Office documents (Word, Excel, PowerPoint, OpenDocument).
+- **FreeCAD** for 3D models and CAD files.
+
+The app downloads each one once, inside the app, the first time you need it. After that they run offline too.
+
+## Pricing and refunds
+
+**$29, once.** One payment, no subscription, and every 2.x update is included. A later major version may be sold separately. The version you own keeps working. Payments are handled by Polar, and the license key arrives by email after checkout.
+
+[**Get Filoshi — $29**](https://filoshi.com/#pricing)
+
+**Refunds.** All sales are final. If Filoshi won't install, won't start, or can't do a conversion the site says it does, and we can't fix it with you, we refund you in full within 30 days of your purchase. A refund turns off the license key. This does not limit any rights you have under the law where you live. Details: [filoshi.com/refund](https://filoshi.com/refund).
+
+## Licensing
+
+- **The Filoshi app is proprietary software.** Its source code is not published. You get a personal, non-transferable license to use it on your own devices. Your key can be active on a limited number of PCs at once, and each activation is tied to one PC. To move Filoshi, use Settings → License → Deactivate this PC on the old one. See the [terms of service](https://filoshi.com/terms).
+- **Codecs and patents.** Which video and audio formats may be covered by patents is explained at [filoshi.com/codec-licensing](https://filoshi.com/codec-licensing).
+- **Open-source components.** Filoshi bundles open-source engines that keep their own licenses: FFmpeg (GPL 3.0), ImageMagick (ImageMagick License), Pandoc (GPL 2.0 or later), 7-Zip (LGPL 2.1 or later, BSD 3-clause, unRAR restriction), PDFium (BSD 3-clause and Apache 2.0) and pdfcpu (Apache 2.0). The optional add-ons are LibreOffice (MPL 2.0, much of it also LGPL 3.0 or later) and FreeCAD (LGPL 2.0 or later). The full list, with versions and where to get the source, is at [filoshi.com/open-source](https://filoshi.com/open-source).
+- **This repository.** The documents here (this README, the support guides and the issue forms) are licensed under [CC BY 4.0](LICENSE). The Filoshi name, logo and characters are not covered by it.
+
+## Getting help
+
+Start with the checklist in [SUPPORT.md](SUPPORT.md). It solves most problems: SmartScreen, macOS Gatekeeper, missing add-ons and files too big for the browser try.
+
+Still stuck? [Open an issue](https://github.com/OuterSpacee/Filoshi-Support/issues/new/choose) and pick the form that fits:
+
+- **Bug report**: the app crashes, freezes or looks wrong.
+- **Conversion failed**: a conversion gives an error, a broken file or a wrong result.
+- **Format request**: a format Filoshi doesn't list yet.
+- **Feature request**: an idea for the app.
+- **Website issue**: something wrong on filoshi.com.
+
+Have a question? Ask in [Discussions](https://github.com/OuterSpacee/Filoshi-Support/discussions).
+
+Anything about a purchase, a license key or a refund: email [support@filoshi.com](mailto:support@filoshi.com). Never post a license key, order number or email receipt in a public issue.
+
+Filoshi is made by one independent developer. We aim to reply to email within 2 business days and to label issues within a few business days. These are goals, not guarantees.
+
+Found a security problem? Please don't open a public issue. See [SECURITY.md](SECURITY.md).
 
 ## Privacy
 
-Your files never leave your computer. Filoshi does not upload them, and the app has no tracking. The app goes online only for three things: a background license check, an update check at most once a week when it starts (you can turn this off in Settings), and downloading the LibreOffice or FreeCAD add-on when you ask for it. The website counts visits; see [filoshi.com/privacy](https://filoshi.com/privacy).
+Your files never leave your computer. There is no account. The app has no analytics, no telemetry and no advertising. It goes online for only three things: a background license check, an update check at most once a week when it starts (you can turn this off in Settings), and downloading an add-on when you ask for it.
 
-## Links
+The website is different. filoshi.com uses analytics (PostHog) to count visits, and checkout is handled by Polar. Details: [filoshi.com/privacy](https://filoshi.com/privacy).
 
-- [Formats](https://filoshi.com/formats): every conversion the app lists
-- [Download](https://filoshi.com/download): installers for license holders
-- [Privacy policy](https://filoshi.com/privacy)
-- [Terms of service](https://filoshi.com/terms)
-- [Refund policy](https://filoshi.com/refund)
-- [Codec licensing](https://filoshi.com/codec-licensing): which video and audio formats may be covered by patents
-- [Open-source licenses](https://filoshi.com/open-source): every bundled engine, its license and where to get its source
+## Projects that make Filoshi possible
 
-## How to get help or file an issue
+Filoshi stands on the work of people who share theirs. Thank you to:
 
-1. Read [SUPPORT.md](SUPPORT.md). It has a short "before you file" checklist that solves the most common problems (SmartScreen, macOS Gatekeeper, missing add-ons, files too large for the browser try).
-2. **Found a bug or a failed conversion?** [Open an issue](https://github.com/OuterSpacee/Filoshi-Support/issues/new/choose) and pick the matching form. Include your Filoshi version (Settings → About), your operating system, the source and target format, and the exact error text.
-3. **Have a question?** Ask in [Discussions](https://github.com/OuterSpacee/Filoshi-Support/discussions).
-4. **Anything about your purchase, license key or a refund?** Email [support@filoshi.com](mailto:support@filoshi.com). Never post a license key, an order number or an email receipt in a public issue.
-5. **Security problem?** Do not open a public issue. See [SECURITY.md](SECURITY.md).
+- [FFmpeg](https://ffmpeg.org) for video and audio
+- [ImageMagick](https://imagemagick.org) for images
+- [Pandoc](https://pandoc.org) for documents
+- [7-Zip](https://www.7-zip.org) for archives
+- [PDFium](https://pdfium.googlesource.com/pdfium/) for PDFs
+- [pdfcpu](https://github.com/pdfcpu/pdfcpu) for PDF tools
+- [LibreOffice](https://www.libreoffice.org) for Office documents (optional add-on)
+- [FreeCAD](https://www.freecad.org) for 3D models and CAD (optional add-on)
+- [Bricolage Grotesque](https://github.com/ateliertriay/bricolage) and [Geist](https://github.com/vercel/geist-font) for the fonts
 
-## License
+---
 
-- **The Filoshi app is proprietary software**, sold under the [terms of service](https://filoshi.com/terms). Its source code is not published. The open-source engines it bundles keep their own licenses, listed on [filoshi.com/open-source](https://filoshi.com/open-source).
-- **The documents in this repository** (this README, the support guides and the issue forms) are licensed under [Creative Commons Attribution 4.0 International](LICENSE) (CC BY 4.0).
-- The Filoshi name, logo and characters are trademarks of their owner and are not covered by CC BY 4.0.
-
-Filoshi is made by an independent developer. Contributions to this repository are welcome as documentation fixes only; see the pull request template.
+<p align="center">Filoshi is made with ❤️ by Ismail.</p>

@@ -1,6 +1,6 @@
 # Getting help with Filoshi
 
-There are three ways to reach us. Pick the one that fits.
+Something not working the way it should? We are sorry, and we want to help. Filoshi is made by one independent developer who reads every message. Start with the quick checklist below, since it fixes most problems. If it doesn't, pick the way to reach us that fits.
 
 | You want to | Go to |
 |---|---|
