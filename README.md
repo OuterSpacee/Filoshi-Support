@@ -31,19 +31,16 @@ Filoshi is a small desktop app with a big appetite. Drag a file onto the window 
 <p align="center">
   <img src="assets/demo-eat.gif" alt="Filoshi eating a dropped video file and converting it" width="480"><br>
   <em>Drop a file and Filoshi eats it. The new file appears next to the original.</em><br>
-  <a href="https://filoshi.com/videos/eat.mp4">Watch the full video</a>
 </p>
 
 <p align="center">
   <img src="assets/demo-gulp.gif" alt="Filoshi converting several files in one queue" width="480"><br>
   <em>Drop a whole pile. Each file shows its own progress and result.</em><br>
-  <a href="https://filoshi.com/videos/gulp.mp4">Watch the full video</a>
 </p>
 
 <p align="center">
   <img src="assets/demo-island.gif" alt="The Filoshi island converting a photo at the top of the screen" width="480"><br>
   <em>Close the window and Filoshi becomes a small pill at the top of the screen. Drop a file on it, pick a format, drag the result out.</em><br>
-  <a href="https://filoshi.com/videos/island.mp4">Watch the full video</a>
 </p>
 
 ## What Filoshi does
